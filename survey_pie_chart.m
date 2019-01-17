@@ -1,9 +1,6 @@
 %% Figure 2A: pie chart
 
-basedir = '/Users/hong/project/replication';
-% basedir = '/Users/clinpsywoo/Nas/replication';
-datdir = fullfile(basedir, 'data');
-load(fullfile(datdir, 'final_data_replication.mat'));
+load('original_replication_peaks_data.mat');
 
 study_category.dat(ismember(study_category.study_num, [271 378 387])) = [];
 study_category.study_num(ismember(study_category.study_num, [271 378 387])) = [];
@@ -42,11 +39,5 @@ wani_pie(p, 'notext', 'hole', 'cols', colors, 'hole_size', 3000);
 
 set(gcf, 'Position', [1   917   545   428]);
 
-figdir = fullfile(basedir, 'figures');
 
-% savename = fullfile(figdir, 'study_category_pie_111317_v2.eps');
-% saveas(gcf, savename);
-% 
-%  print(gcf,'-depsc','-painters',savename);
-%  epsclean(savename);
 
