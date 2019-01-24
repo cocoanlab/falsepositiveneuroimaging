@@ -11,12 +11,12 @@ Scripts are separated by function, not by figures. To better understand the scri
 ## Figure composition
 
 Figure1  | Figure2 | Figure3 | Figure4 | Figure5 | 
----| --- | --- | --- | --- | ---
-meta emotion maps.m| survey pie chart.m|peak pattern SNR sim.m|replication simulation scatter plot.m|permutation test for single peak.m
-example of issues in region level inference.m | survey result box violin plots.m | | illustration 3bar original replication.m |peaksconfidence region.m
-illustration 3bar original replication.m| cdfplot peak distances.m | | | multiple peaks MANOVA.m
-|||||pattern similarity test.m
-|||||classification test.m
+---------| ------- | ------- | ------- | --------|
+meta emotion maps.m| survey pie chart.m|peak pattern SNR sim.m|replication simulation scatter plot.m|permutation test for single peak.m|
+example of issues in region level inference.m | survey result box violin plots.m | | illustration 3bar original replication.m |peaksconfidence region.m|
+illustration 3bar original replication.m| cdfplot peak distances.m | | | multiple peaks MANOVA.m|
+|||||pattern similarity test.m|
+|||||classification test.m|
 
 
 **Figure1**: Issues in testing replication using region-level and coordinate-based spatial models. 
