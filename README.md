@@ -21,31 +21,31 @@ illustration 3bar original replication.m| cdfplot peak distances.m | | | multipl
 
 
 
-##Figure1: Issues in testing replication using region-level and coordinate-based spatial models. 
+## Figure1: Issues in testing replication using region-level and coordinate-based spatial models. 
 
 ![alt text](figure1.png)
 
 
 
-##Figure2: Survey results.
+## Figure2: Survey results.
 
 ![alt text](figure2.png)
 
 
 
-##Figure3: Simulation 1.
+## Figure3: Simulation 1.
 
 ![alt text](figure3.png)
 
 
 
-##Figure4: Simulation 2. 
+## Figure4: Simulation 2. 
 
 ![alt text](figure4.png)
 
 
 
-##Figure5: Recommendations.
+## Figure5: Recommendations.
 
 ![alt text](figure5.png)
 
