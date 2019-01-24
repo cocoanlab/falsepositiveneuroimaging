@@ -1,4 +1,4 @@
-%% Peak distance between original data and replication data
+d%% Peak distance between original data and replication data
 
 % % run once
 % final_data.dat(final_data.dat(:,2)==2,4:6) = tal2mni(final_data.dat(final_data.dat(:,2)==2,4:6));

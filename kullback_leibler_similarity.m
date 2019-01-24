@@ -1,10 +1,7 @@
 %% Peak distances
 
 %load data
-basedir = '/Users/hong/project/replication';
-% basedir = '/Users/clinpsywoo/Nas/replication';
-datdir = fullfile(basedir, 'data');
-load(fullfile(datdir, 'original_replication_peaks_data.mat'));
+load('original_replication_peaks_data.mat');
 
 study_category.dat(ismember(study_category.study_num, [271 378 387])) = [];
 study_category.study_num(ismember(study_category.study_num, [271 378 387])) = [];
@@ -51,8 +48,6 @@ distance_all(1:numel(distance_exact),3) = distance_exact;
 
 
 %% Kullback-Leibler similarity
-scriptdir = fullfile(basedir, 'script');
-addpath(genpath(scriptdir));
 
 for i = 4:10
     x = 0:i:110;
@@ -87,12 +82,3 @@ set(gca, 'tickdir', 'out', 'xtick', 1:9, 'ytick', 0:2:20, ...
     'ylim', [0 11], 'fontsize', 16, 'linewidth', 1.2)
 
 line([0 10], [1 1], 'linestyle', '--', 'linewidth', 1.2, 'color', [.4 .4 .4]);
-
-% figdir = fullfile(basedir, 'figures');
-% savename = fullfile(figdir, 'kldiv.pdf');
-% 
-% pagesetup(gcf);
-% saveas(gcf, savename);
-% 
-% pagesetup(gcf);
-% saveas(gcf, savename);

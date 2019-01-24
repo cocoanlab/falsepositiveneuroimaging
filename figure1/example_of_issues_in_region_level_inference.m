@@ -1,10 +1,14 @@
 %% issues in region-level inference
 
 %% load data (woo et al, 2014)
-basedir = '/Users/hong/project/replication/';
-% basedir = '/Users/clinpsywoo/Nas/replication';
+
+
+basedir='/Users/' % set files location
+
+basedir = '/Users/hong/project/replication';
 datdir = fullfile(basedir, 'data');
-load(fullfile(datdir, 'data_obj_for_lassopcr_n59.mat'), 'data');
+savename = fullfile(datdir, 'data_obj_for_lassopcr_n59.mat');
+load(savename);
 
 %% sort out the images for each subject
 
@@ -51,7 +55,10 @@ dat_friend_dacc = apply_mask(dat_friend, mask);
 
 %% from here: first 30 subjects
 
-basedir = '/Users/hong/project/replication';
+
+basedir = '/Users/' % set file location
+
+% basedir = '/Users/hong/project/replication';
 datdir = fullfile(basedir, 'data');
 savename = fullfile(datdir, 'data_onlydacc_addsmooth1');
 load(savename);

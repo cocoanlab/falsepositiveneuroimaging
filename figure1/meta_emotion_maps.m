@@ -1,3 +1,4 @@
+%% visualize peak coordinates distribution on brain
 % meta_basedir =  '/Users/clinpsywoo/Nas/replication/data/Meta_Emotion_3_30_13';
 % load(fullfile(meta_basedir, 'METAANALYSIS_2013_03_29_selected.mat'));
 
