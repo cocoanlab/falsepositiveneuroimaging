@@ -53,14 +53,23 @@ illustration 3bar original replication.m| cdfplot peak distances.m | | | multipl
 
 
 
-## Dependency
+## Dependencies for the simulation code
 
 
 - [Matlab](https://www.mathworks.com)
 
-- CANLab core tools
+- CANLab core tools (e.g., voxel2mm.m, region.m, apply mask.m, etc.)
 
 You can download the CANLab core tools using the following command line. 
-
+	
 	$ git_clone https://github.com/canlab/CanlabCore.git
+
+- Cocoanlab core tools (e.g., glass brain network.m, boxplot wani 2016.m, roi contour map.m, etc.)
+
+You can also download the COCOANlab core tools using the following command line. 
+	
+	$ git_clone https://github.com/cocoanlab/cocoanCORE.git
+
+
+
 
