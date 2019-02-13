@@ -3,11 +3,10 @@
 Through this github repository, we will share data and code that support "False-positive neuroimaging: Undisclosed flexibility in testing spatial hypotheses allows presenting anything as a replicated finding" upon its publication. 
 
 You can access preprint manuscript from [here](https://www.biorxiv.org/content/10.1101/514521v1)
-
+<br><br>
 ## Overview
 Scripts are separated by function, not by figures. To better understand the script, we have tabulated the scripts needed for each figure, and we added the results of each figure.
-
-
+<br><br>
 ## Figure composition
 <div class="table_layout">
 <table width=100%>
@@ -58,7 +57,7 @@ Scripts are separated by function, not by figures. To better understand the scri
 ## Figure1: Issues in testing replication using region-level and coordinate-based spatial models. 
 
 ![alt text](figure1.png)
-
+<br><br>
 
 
 ## Figure2: Survey results.
@@ -66,26 +65,20 @@ Scripts are separated by function, not by figures. To better understand the scri
 ![alt text](figure2.png)
 
 
-
 ## Figure3: Simulation 1.
 
 ![alt text](figure3.png)
-
-
+<br><br>
 
 ## Figure4: Simulation 2. 
 
 ![alt text](figure4.png)
-
-
+<br><br>
 
 ## Figure5: Recommendations.
 
 ![alt text](figure5.png)
-
-
-
-
+<br><br>
 
 ## Dependencies for the simulation code
 
