@@ -54,7 +54,7 @@ Scripts are separated by function, not by figures. To better understand the scri
 </table>
 </div>
 
-
+<br><br>
 ## Figure1: Issues in testing replication using region-level and coordinate-based spatial models. 
 
 ![alt text](figure1.png)
