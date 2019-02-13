@@ -46,7 +46,7 @@ Scripts are separated by function, not by figures. To better understand the scri
 		<td><b>  Figure 5  </b></td>
 		<td>permutation test for single peak.m</td>
 		<td>peaksconfidence region.m</td>
-		<td>multiple peaks MANOVA.m4</td>
+		<td>multiple peaks MANOVA.m</td>
 		<td>pattern similarity test.m</td>
 		<td>classification test.m</td>
 	</tr>
