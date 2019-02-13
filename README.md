@@ -9,16 +9,50 @@ Scripts are separated by function, not by figures. To better understand the scri
 
 
 ## Figure composition
-
-Figure1  | Figure2 | Figure3 | Figure4 | Figure5 | 
----------| ------- | ------- | ------- | --------|
-meta emotion maps.m| survey pie chart.m|peak pattern SNR sim.m|replication simulation scatter plot.m|permutation test for single peak.m|
-example of issues in region level inference.m | survey result box violin plots.m | | illustration 3bar original replication.m |peaksconfidence region.m|
-illustration 3bar original replication.m| cdfplot peak distances.m | | | multiple peaks MANOVA.m|
-|||||pattern similarity test.m|
-|||||classification test.m|
-
-
+<div class="table_layout">
+<table width=100%>
+	<tr>
+		<td width= 10%><b>Figure 1</b></td>
+		<td>meta emotion maps.m</td>
+		<td>example of issues in region level inference.m</td>
+		<td>illustration 3bar original replication.m</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><b>  Figure 2    </b></td>
+		<td>survey pie chart.m</td>
+		<td>survey result box violin plots.m</td>
+		<td>cdfplot peak distances.m</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><b>  Figure 3  </b></td>
+		<td>peak pattern SNR sim.m</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><b>  Figure 4  </b></td>
+		<td>replication simulation scatter plot.m</td>
+		<td>illustration 3bar original replication.m</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><b>  Figure 5  </b></td>
+		<td>permutation test for single peak.m</td>
+		<td>peaksconfidence region.m</td>
+		<td>multiple peaks MANOVA.m4</td>
+		<td>pattern similarity test.m</td>
+		<td>classification test.m</td>
+	</tr>
+</table>
+</div>
 
 
 ## Figure1: Issues in testing replication using region-level and coordinate-based spatial models. 
