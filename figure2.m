@@ -1,10 +1,32 @@
-%load final_data
-basedir = '/Users/hong/project/replication';
-% basedir = '/Users/clinpsywoo/Nas/replication';
+%% Figure 2A: pie chart
+
+basedir = pwd; % start from the directory where you downloaded this repository
 datdir = fullfile(basedir, 'data');
 load(fullfile(datdir, 'original_replication_peaks_data.mat'));
 
-%calculate distance between peak coordinates
+study_category.dat(ismember(study_category.study_num, [271 378 387])) = [];
+study_category.study_num(ismember(study_category.study_num, [271 378 387])) = [];
+
+orderidx = [1 2 4 3 5 6 7];
+for i = 1:numel(orderidx)
+    p(i) = sum(study_category.dat == orderidx(i))/numel(study_category.dat)*100; 
+end
+ 
+colors = [0.6471    0.6471    0.6471
+    [0.3569    0.6078    0.8353]-.1
+    [0.6627    0.8196    0.5569]-.1
+    0.3569    0.6078    0.8353
+    0.6627    0.8196    0.5569
+    1.0000    0.7529         0
+    0.9294    0.4902    0.1922];
+
+wani_pie(p, 'notext', 'hole', 'cols', colors);
+
+set(gcf, 'Position', [1   917   545   428]);
+
+
+%% Figure 2B: Box violin plots
+
 jj = 0;
 no_exact_model = study_category.study_num(study_category.dat==3);
 for i = 1:numel(no_exact_model)
@@ -38,22 +60,28 @@ for i = 1:numel(exact_model)
     end
 end
 
-%% cdfplot
+% box-violin plot
+
+colors = [0.6471    0.6471    0.6471
+    [0.3569    0.6078    0.8353]-.1
+    [0.6627    0.8196    0.5569]-.1
+    0.3569    0.6078    0.8353
+    0.6627    0.8196    0.5569
+    1.0000    0.7529         0
+    0.9294    0.4902    0.1922];
+
+boxplot_wani_2016(distance_all, 'color', colors([2 5 6],:), 'violin', 'dots', 'dot_alpha', .4, 'data_dotcolor', [.5 .5 .5], 'bw', 10);
+set(gca, 'linewidth', 1.2, 'fontsize', 18, 'YTick', -20:20:150);
+set(gcf, 'position', [1        1033         354         312]);
+hold on;
+
+%% Figure 2C: Cumulative Distribution Function plot
+
 close all;
-figure;
-y1=cdfplot(distance_exact(~isnan(distance_exact))); %blue
-hold on
-y2=cdfplot(distance_roi(~isnan(distance_roi))); %red
-hold on
-y3=cdfplot(distance_noexact(~isnan(distance_noexact))); %yellow
-% legend('distance exact','distance roi','distance noexact')
-% distance exact: Coordinate-based ROI
-% distance roi: predefined anatomical ROI 
-% distance noexact: Qualitative region-level
+y1 = cdfplot(distance_exact(~isnan(distance_exact))); hold on;
+y2 = cdfplot(distance_roi(~isnan(distance_roi))); hold on;
+y3 = cdfplot(distance_noexact(~isnan(distance_noexact))); 
 
-
-
-%% edit the cdfplot
 colors = [0.6471    0.6471    0.6471
     [0.3569    0.6078    0.8353]-.1
     0.3569    0.6078    0.8353
@@ -74,18 +102,3 @@ line([16.3 16.3], [0 1], 'linewidth', 2, 'linestyle', '--', 'color', [.5 .5 .5])
 set(gcf, 'color', 'w', 'position', [1   943   504   402]);
 set(gca, 'linewidth', 2, 'box', 'off', 'tickdir', 'out', 'ticklength', [.015 .015], 'fontsize', 25, 'xlim', [-.5 115], 'xtick', 0:20:100);
 
-
-% proportion of peak distances that less than amygdala's size
-1-sum(distance_exact(~isnan(distance_exact))>16.3)./numel(distance_exact(~isnan(distance_exact)))
-1-sum(distance_roi(~isnan(distance_roi))>16.3)./numel(distance_roi(~isnan(distance_roi)))
-1-sum(distance_noexact(~isnan(distance_noexact))>16.3)./numel(distance_noexact(~isnan(distance_noexact)))
- 
-
-%     0.7647
-%     0.5868
-%     0.5172
-
-% proportion of peak distances that larger than amygdala's size
-%Coordinate-based ROI: 0.2353 
-%predefined anatomical ROI: 0.4132 
-%Qualitative region-level: 0.4828 
