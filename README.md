@@ -6,7 +6,7 @@ This github repository is for sharing the data and the codes (Matlab and R) that
 
 
 ## Overview
-This repository contains scripts for Figure 2-5 of the paper. To see figures, please see the paper. 
+This repository contains scripts for analyses in Figure 2-5 of the paper. To see figures, please see the paper. 
 
 
 ## Dependencies
