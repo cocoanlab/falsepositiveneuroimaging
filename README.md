@@ -1,4 +1,4 @@
-## Data and code sharing for Hong et al., in press
+## Data and code sharing for Hong et al.
 
 This github repository is for sharing the data and the codes (Matlab and R) that are used in the following paper. 
 
